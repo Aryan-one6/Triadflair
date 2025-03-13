@@ -6,6 +6,10 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import one from "./one.png";
+import two from "./two.png";
+import three from "./three.png";
+import four from "./four.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -22,7 +26,7 @@ import typescript from "./tech/typescript.png";
 import nextjs from "./tech/nextjs.png";
 import Canva from "./tech/Canva.png";
 import bootstrap from "./tech/bootstrap.png";
-
+import vinayak from "./vinayak.jpg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -38,10 +42,19 @@ import tesla from "./company/tesla.png";
 import Scarpuphm from "./Scarpuphm.png";
 import nutri from "./nutri.png";
 import tripguide from "./tripguide.png";
+import down from "./down.png";
+import done from "./done.png"
 
 export {
   logo,
+  done,
+  down,
+  one,
+  two,
+  three,
+  four,
   backend,
+  vinayak,
   creator,
   mobile,
   web,

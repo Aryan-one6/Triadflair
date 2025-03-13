@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-// import { EarthCanvas, StarsCanvas } from "./canvas";
+import { StarsCanvas } from "./canvas";
 
 import { technologies } from "../constants";
 import { styles } from "../styles";
@@ -19,7 +19,7 @@ const Tech = () => {
   };
 
   return (
-    <div id="tech"> 
+    <div id="tech"> <StarsCanvas/>
       <motion.div variants={textVariant()} className="text-center">
         <p className={`${styles.sectionSubText}`}>
           My Skills

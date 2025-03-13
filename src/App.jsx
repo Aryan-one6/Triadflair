@@ -1,37 +1,44 @@
-import { BrowserRouter } from "react-router-dom"
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Pricing, Tech, Works, Footer, ScrollToTop} from './components'
-import { Analytics } from "@vercel/analytics/react"
-// import Sidebar from "./components/Sidebar";
-// import { SpeedInsights } from "@vercel/speed-insights/next"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import React, { useState, useEffect } from 'react';
 
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Pricing, Tech, Works, Footer, ScrollToTop, Team, Home, AboutPage, ContactPage, PricingPage} from './components';
+
+// import Home from './pages/Home.jsx';
 
 const App = () => {
 
   return (
 
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Analytics />
-          <Hero />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutPage />} />
+        <Route path="/Contact-us" element={<ContactPage />} />
+        <Route path="/Our-Pricing" element={<PricingPage />} />
 
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Pricing />
-        <Works />
-        <Feedbacks />
-        <div className="relative z-0">
-          <Contact />
-        </div>
-        <Footer />
-<ScrollToTop/>
-      </div>
+
+      </Routes>
+    
     </BrowserRouter>
+
   )
 }
 
-export default App
+export default App;
 
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Home from "./pages/Home.jsx ";
+
+
+// const App = () => {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Home />} /> 
+//         <Route path="/about-us" element={<AboutPage />} /> 
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// };
+
+// export default App;

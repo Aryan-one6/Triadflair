@@ -11,7 +11,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-// import { StarsCanvas } from "./canvas";
+import { StarsCanvas } from "./canvas";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -64,12 +64,12 @@ const Experience = () => {
         variants={textVariant()}
         initial="hidden"
         animate="show"
-      >
+      >  <StarsCanvas />
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          Follow these simple steps
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience and Projects.
+          How to Proceed with us.
         </h2>
       </motion.div>
 
