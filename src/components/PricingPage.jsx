@@ -9,7 +9,7 @@ import { HeroPricing } from '.'
   return (
     <div>
       <Navbar/>
-      {/* <HeroPricing/> */}
+      <HeroPricing/>
       <Pricing/>
       
       <Footer/>

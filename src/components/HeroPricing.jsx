@@ -1,20 +1,16 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { motion } from "framer-motion";
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
+
 
 export default function HeroPricing() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-primary">
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+    <div  className=" bg-primary h-screen">
+      <div className="bg-hero-pattern w-full bg-cover bg-no-repeat bg-center">
 
         <div className="relative isolate px-6 pt-4 lg:px-8">
           <div
@@ -41,10 +37,10 @@ export default function HeroPricing() {
             </div>
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                About Us
+                Our Pricings 
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-400">
-                Home / About us
+                Home / Our Pricings
               </p>
               {/* <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
@@ -72,6 +68,23 @@ export default function HeroPricing() {
             />
           </div>
         </div>
+        <div className='absolute xs:bottom-10 mb-12 bottom-20 w-full flex justify-center items-center'>
+        <a href='#Pricing'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className='w-3 h-3 rounded-full bg-secondary mb-1'
+            />
+          </div>
+        </a>
+      </div>
       </div>
     </div>
   )

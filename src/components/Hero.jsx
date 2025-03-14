@@ -5,7 +5,7 @@ import myCV from "../assets/my_cv.pdf"; // Importing your CV
 
 const Hero = () => {
   return (
-    <section className={`relative w-full  h-[750px] mx-auto flex items-center`}>
+    <section className={`relative w-full  h-screen mx-auto flex items-center`}>
       <div
         className={`absolute inset-0 top-0 bottom-0 flex justify-center items-center max-w-7xl mx-auto ${styles.paddingX} gap-5`}
       >
