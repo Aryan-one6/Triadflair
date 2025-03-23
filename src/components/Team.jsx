@@ -18,6 +18,12 @@ const person = [
         imageSrc: "Team/Suryansh.jpg",
     },
     {
+        name: "Rohit",
+        href: "#",
+        Description: "Full Stack Dev.",
+        imageSrc: "Team/Rohit.jpeg",
+    },
+    {
         name: "Saumya ",
         href: "#",
         Description: ".net Developer",
@@ -29,12 +35,12 @@ const person = [
         Description: "AI Engineer",
         imageSrc: "Team/vinayak.jpg",
     },
-    {
-        name: "Sumit",
-        href: "#",
-        Description: "App Developer",
-        imageSrc: "Team/Sumit.jpg",
-    },
+    // {
+    //     name: "Sumit",
+    //     href: "#",
+    //     Description: "App Developer",
+    //     imageSrc: "Team/Sumit.jpg",
+    // },
 ];
 
 export default function Team({ TopPadding = "" }) {

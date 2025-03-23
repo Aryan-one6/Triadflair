@@ -1,78 +1,72 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp, FaDownload } from "react-icons/fa"; 
+import { styles } from "../styles";
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
-
-export default function HeroAbout() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+const HeroAbout = () => {
   return (
-    <div className="bg-primary">
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+    <section className={`relative w-full  h-screen mx-auto flex items-center`}>
+      <div
+        className={`absolute inset-0 top-0 bottom-0 flex justify-center items-center max-w-7xl mx-auto ${styles.paddingX} gap-5`}
+      >
+        <div className='flex flex-col justify-center items-center mt-5'>
+          {/* <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-1 sm:h-60 h-60 violet-gradient' /> */}
+        </div>
 
-        <div className="relative isolate px-25 pt-24 lg:px-18">
-          <div
-            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-            aria-hidden="true"
-          >
-            <div
-              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg]  from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-              style={{
-                clipPath:
-                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-              }}
-            />
-          </div>
-          <div className="mx-auto max-w-2xl py-22 sm:py-28 lg:py-56">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              {/* <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Announcing our next round of funding.{' '}
-                <a href="#" className="font-semibold text-indigo-600">
-                  <span className="absolute inset-0" aria-hidden="true" />
-                  Read more <span aria-hidden="true">&rarr;</span>
-                </a>
-              </div> */}
+        <div>
+          <h1 className={`${styles.heroHeadText} text-center text-white`}>
+            About <span className='text-[#915EFF]'>us</span>
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
+          We’re a passionate team dedicated to merging creativity and technology, delivering solutions that help businesses thrive in the digital landscape.
+
+
+
+
+
+        </p>
+          {/* <p className={`${styles.heroSubText} mt-4 text-gray-400`}>
+            Bringing visions to life <br className='sm:block hidden' />
+            through cutting-edge web Technologies.
+          </p> */}
+
+          {/* Social Media Icons and Download CV Icon */}
+          {/* <div className='flex flex-wrap items-center gap-4 mt-8'>
+            <div className='flex gap-4'>
+              <a href='https://www.linkedin.com/in/naresh-parashar-a34676213/' target='_blank' rel='noopener noreferrer'>
+                <FaLinkedin className='text-white text-xl sm:text-2xl hover:text-[#0077B5] transition-colors duration-200' />
+              </a>
+              <a href='https://github.com/Aryan-one6/' target='_blank' rel='noopener noreferrer'>
+                <FaGithub className='text-white text-2xl sm:text-2xl hover:text-[#333] transition-colors duration-200' />
+              </a>
+              <a href='https://instagram.com/Aryan_one6/' target='_blank' rel='noopener noreferrer'>
+                <FaInstagram className='text-white text-2xl sm:text-2xl hover:text-[#E4405F] transition-colors duration-200' />
+              </a>
+             
             </div>
-            <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                About Us
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-400">
-                Home / About us
-              </p>
-              {/* <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Get started
-                </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-white">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
-              </div> */}
-            </div>
-          </div>
-          <div
-            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-            aria-hidden="true"
-          >
-            <div
-              className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-              style={{
-                clipPath:
-                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-              }}
-            />
-          </div>
+          </div> */}
         </div>
       </div>
-    </div>
-  )
-}
+
+      <div className='absolute xs:bottom-10 bottom-20 w-full flex justify-center items-center'>
+        <a href='#timeline'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className='w-3 h-3 rounded-full bg-secondary mb-1'
+            />
+          </div>
+        </a>
+      </div>
+    </section>
+  );
+};
+
+export default HeroAbout;

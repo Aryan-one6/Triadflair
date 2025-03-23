@@ -17,6 +17,10 @@ import Home from './Home';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
 import PricingPage from './PricingPage';
+import BlogPage from './BlogPage';
+import Blogs from './Blogs';
+import HeroBlogs from './HeroBlogs';
+import HeroContact from './HeroContact';
 
 
 export {
@@ -27,7 +31,11 @@ export {
   PricingPage,
   HeroAbout,
   HeroPricing,
+  HeroContact,
   Navbar,
+  HeroBlogs, 
+  Blogs, 
+  BlogPage, 
   About,
   Tech,
   Experience,

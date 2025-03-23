@@ -7,16 +7,16 @@ const Footer = () => {
   const navigation = {
     Pages: [
       // { name: 'Home', href: 'https://wellmist.co/' },
-      { name: 'Disclaimer', href: 'https://Delhigirl.com/Disclaimer/' },
-      { name: 'Contact ', href: 'https://Delhigirl.com/Contact-us/' },
-      { name: 'Terms and Condition', href: 'https://Delhigirl.com/terms-conditions/' },
-      { name: 'Privacy Policy', href: 'https://Delhigirl.com/Privacy-Policy/' },
+      { name: 'Disclaimer', href: 'https://Heyaryan.com/Disclaimer/' },
+      { name: 'About ', href: 'https://Heyaryan.com/about-us/' },
+      { name: 'Term & Conditions', href: 'https://Heyaryan.com/terms-conditions/' },
+      { name: 'Privacy Policy', href: 'https://Heyaryan.com/Privacy-Policy/' },
     ],
-    Categories: [
-      { name: "Work", href: "#" },
-      { name: "Technologies", href: "#" },
-      { name: "Testimonials", href: "#" },
-      { name: "Vision ", href: "#" },
+    Services: [
+      { name: "Web App", href: "#" },
+      { name: "Mobile App", href: "#" },
+      { name: "Digital Marketing", href: "#" },
+      { name: "Maintainance ", href: "#" },
     ],
 
   };
@@ -62,7 +62,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900">
-      <div className="mx-auto pt-8 pb-0 container lg:ml-28 flex lg:max-w-[87vw]  px-2">
+      <div className="mx-auto  pt-8 pb-0  container lg:ml-28 flex lg:max-w-[87vw]  px-12">
         {/* First Column */}
         <div className="flex flex-wrap lg:flex-nowrap  gap-8">
           <div className="w-full lg:w-2/4">
@@ -95,7 +95,7 @@ const Footer = () => {
                 <svg className="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 13.333l-11-7.333v10.667c0 .733.6 1.333 1.333 1.333h19.333c.733 0 1.333-.6 1.333-1.333v-10.667l-11 7.333zM12 11.667l11-7.333v-.667c0-.733-.6-1.333-1.333-1.333h-19.333c-.733 0-1.333.6-1.333 1.333v.667l11 7.333z" />
                 </svg>
-                <a href="mailto:Contact@Heyaryan.com" className="text-base text-gray-400 hover:text-gray-300">Contact@Heyaryan.com</a>
+                <a href="mailto:Contact@Heyaryan.com" className="text-base text-gray-400 hover:text-gray-300">Connect@Heyaryan.com</a>
               </li>
 
               {/* Phone */}
@@ -141,7 +141,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/4 mt-10 xl:mt-0">
+          <div className="w-full lg:w-1/4 mt-10 mb-12 xl:mt-0">
             <h3 className="text-lg font-semibold md:grid-cols-1 leading-6 text-white">Get in Touch</h3>
             {/* <p className="mt-2 text-sm leading-6 text-gray-300">
               The latest news, articles, and resources, sent to your inbox weekly.

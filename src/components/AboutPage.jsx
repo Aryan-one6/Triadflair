@@ -19,7 +19,8 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import ScrollToTop from './ScrollToTop'
 import HeroAbout from './HeroAbout'
-
+import team from '../assets/team.avif';
+import Team from './Team'
 
 const timeline = [
   {
@@ -30,24 +31,24 @@ const timeline = [
     dateTime: '2021-08',
   },
   {
-    name: 'Secured $65m in funding',
+    name: 'First Milestone',
     description:
-      'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
+      'Secured our initial round of clients, laying the foundation for future growth and expanding service offerings.',
     date: 'Dec 2021',
     dateTime: '2021-12',
   },
   {
-    name: 'Released beta',
+    name: 'Scaling Up',
     description:
-      'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
+      'Established a stronger market presence, refined our solutions, and built a larger, diverse team of experts.',
     date: 'Feb 2022',
     dateTime: '2022-02',
   },
   {
-    name: 'Global launch of product',
+    name: '2023 & Beyond',
     description:
-      'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
-    date: 'Dec 2022',
+      'Continuing to innovate, collaborate, and deliver transformative digital experiences for businesses worldwide.',
+    date: '2023',
     dateTime: '2022-12',
   },
 ]
@@ -58,11 +59,13 @@ const AboutPage=()=> {
   return (
     <div className="relative z-0 bg-primary">
       {/* Header */}
+      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
       <Navbar/>
+      <HeroAbout/></div>
 {/* <HeroAbout/> */}
-      <main className="isolate">
+      <main id='#timeline' className="isolate">
         {/* Hero section */}
-        <div className="relative isolate -z-10 overflow-hidden bg-primary from-indigo-100/20 pt-14">
+        {/* <div className="relative isolate -z-10 overflow-hidden bg-primary from-indigo-100/20 pt-14">
           <div
             className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-gray-700 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
             aria-hidden="true"
@@ -87,10 +90,10 @@ const AboutPage=()=> {
             </div>
           </div>
           <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
-        </div>
+        </div> */}
 
         {/* Timeline section */}
-        <div className="mx-auto -mt-8 max-w-7xl px-6 lg:px-8">
+        <div id='timeline' className="mx-auto mt-8 max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
             {timeline.map((item) => (
               <div key={item.name}>
@@ -121,42 +124,47 @@ const AboutPage=()=> {
               Our customers love us
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              Aliquip reprehenderit incididunt amet quis fugiat ut velit. Sit occaecat labore proident cillum in nisi
-              adipisicing officia excepteur tempor deserunt.
+            Our clients consistently praise our commitment to quality, seamless collaboration, and outstanding results.
+
+
+
+
+
+
             </p>
             <div className="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-5">
               <img
                 className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                 src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-                alt="Transistor"
+                alt="NutriBooster"
                 width={158}
                 height={48}
               />
               <img
                 className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                 src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-                alt="Reform"
+                alt="Fabspin"
                 width={158}
                 height={48}
               />
               <img
                 className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                 src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-                alt="Tuple"
+                alt="Wellmist"
                 width={158}
                 height={48}
               />
               <img
                 className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
                 src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-                alt="SavvyCal"
+                alt="PPconsultings"
                 width={158}
                 height={48}
               />
               <img
                 className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-                alt="Statamic"
+                alt="AvatarJweles"
                 width={158}
                 height={48}
               />
@@ -180,18 +188,28 @@ const AboutPage=()=> {
               <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our people</h2>
                 <p className="mt-6 text-xl leading-8 text-gray-500">
-                  Quasi est quaerat. Sit molestiae et. Provident ad dolorem occaecati eos iste. Soluta rerum quidem
-                  minus ut molestiae velit error quod. Excepturi quidem expedita molestias quas.
+                We’re a passionate, diverse group of professionals committed to pushing boundaries in technology and design. By blending our unique skills, experiences, and perspectives, we form a collaborative environment that fosters innovation and drives exceptional results for our clients.
+
+
+
+
+
+
                 </p>
                 <p className="mt-6 text-base leading-7 text-gray-500">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat. Quasi aperiam sit non sit neque reprehenderit.
+                We are a team of driven experts who believe in the power of collaboration. With diverse skill sets and backgrounds, we continually push boundaries to create transformative digital experiences.
+
+
+
+
+
+
                 </p>
               </div>
               <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
                 <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
                   <img
-                    src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
+                    src={team}
                     alt=""
                     className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
                   />
@@ -223,7 +241,7 @@ const AboutPage=()=> {
             </div>
           </div>
         </div>
-
+<Team/>
         {/* Stats */}
         <div className="mx-auto  my-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
@@ -231,37 +249,35 @@ const AboutPage=()=> {
               We approach the workplace as something that adds to our lives and adds value to world.
             </h2>
             <p className="mt-6 text-base leading-7 text-gray-500">
-              Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu.
-              Cras purus nibh cursus sit eu in id. Integer vel nibh.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
           </div>
           <div className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 lg:mx-0 lg:mt-20 lg:max-w-none lg:flex-row lg:items-end">
             <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-gray-50 p-8 sm:w-3/4 sm:max-w-md sm:flex-row-reverse sm:items-end lg:w-72 lg:max-w-none lg:flex-none lg:flex-col lg:items-start">
-              <p className="flex-none text-3xl font-bold tracking-tight text-gray-900">250k</p>
+              <p className="flex-none text-3xl font-bold tracking-tight text-gray-900">120+</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
-                <p className="text-lg font-semibold tracking-tight text-gray-900">Users on the platform</p>
+                <p className="text-lg font-semibold tracking-tight text-gray-900">Customers</p>
                 <p className="mt-2 text-base leading-7 text-gray-600">
-                  Vel labore deleniti veniam consequuntur sunt nobis.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 </p>
               </div>
             </div>
             <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-gray-900 p-8 sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-sm lg:flex-auto lg:flex-col lg:items-start lg:gap-y-44">
-              <p className="flex-none text-3xl font-bold tracking-tight text-white">$8.9 billion</p>
+              <p className="flex-none text-3xl font-bold tracking-tight text-white">200+</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">
-                  We’re proud that our customers have made over $8 billion in total revenue.
-                </p>
+Project Managed                </p>
                 <p className="mt-2 text-base leading-7 text-gray-400">
-                  Eu duis porta aliquam ornare. Elementum eget magna egestas.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 </p>
               </div>
             </div>
             <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-indigo-600 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
-              <p className="flex-none text-3xl font-bold tracking-tight text-white">401,093</p>
+              <p className="flex-none text-3xl font-bold tracking-tight text-white">50+</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">Transactions this year</p>
                 <p className="mt-2 text-base leading-7 text-indigo-200">
-                  Eu duis porta aliquam ornare. Elementum eget magna egestas. Eu duis porta aliquam ornare.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 </p>
               </div>
             </div>

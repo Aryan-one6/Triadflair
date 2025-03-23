@@ -71,9 +71,9 @@ import { StarsCanvas } from "./canvas";
 
 const testimonials = [
   {
-    name: "Jane D",
+    name: "Sailesh D",
     role: "CEO",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: "https://randomuser.me/api/portraits/men/44.jpg",
     rating: 5,
     feedback: "The user interface of this pagedone is so intuitive, I was able to start using it without any guidance.",
   },
@@ -92,7 +92,7 @@ const testimonials = [
     feedback: "Pagedone helps our team collaborate effortlessly. Highly recommend it!",
   },
   {
-    name: "Mike T.",
+    name: "Mukesh T.",
     role: "Software Engineer",
     image: "https://randomuser.me/api/portraits/men/18.jpg",
     rating: 5,
@@ -127,7 +127,7 @@ const Feedbacks=()=> {
 
       <h3 className="text-gray-500 text-sm uppercase">Testimonial</h3>
       <h2 className="text-3xl font-bold text-white text-center">
-        23k+ Customers gave their <span className="text-purple-600">Feedback</span>
+        100+ Customers gave their <span className="text-purple-600">Feedback</span>
       </h2>
 
       {/* Testimonial Wrapper */}

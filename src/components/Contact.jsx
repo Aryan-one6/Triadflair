@@ -68,7 +68,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse  gap-10 overflow-hidden`}
     >        <StarsCanvas />
 
       <motion.div

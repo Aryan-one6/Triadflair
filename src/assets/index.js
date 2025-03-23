@@ -10,6 +10,13 @@ import one from "./one.png";
 import two from "./two.png";
 import three from "./three.png";
 import four from "./four.png";
+import py from "./tech/py.jpg";
+import flask from "./tech/flask.webp";
+import aws from "./tech/aws.png";
+import ppc from "./ppc.png";
+import wellmist from "./wellmist.png";
+import mf from "./mf.png";
+import team from "./team.avif";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -47,6 +54,13 @@ import done from "./done.png"
 
 export {
   logo,
+  py,
+  flask,
+  aws,
+  ppc,
+  wellmist,
+  team,
+  mf,
   done,
   down,
   one,
