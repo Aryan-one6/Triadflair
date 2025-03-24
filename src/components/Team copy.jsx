@@ -10,13 +10,13 @@ const person = [
         name: "Aryan",
         href: "#",
         Description: "Web Developer",
-        imageSrc:{Aryan},
+        imageSrc:"../../public/Team/Aryan.jpg",
     },
     {
         name: "Suryansh",
         href: "#",
         Description: "Backend Developer",
-        imageSrc: "./Suryansh.jpg",
+        imageSrc: "../../public/Team/Suryansh.jpg",
     },
     {
         name: "Rohit",

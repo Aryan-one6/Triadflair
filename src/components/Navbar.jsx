@@ -151,7 +151,7 @@ const company = [
                       href={item.href}
                       className="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                     >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                      <item.icon className="h-5 w-5 flex-none text-indigo-500" aria-hidden="true" />
                       {item.name}
                     </a>
                   ))}
@@ -161,9 +161,9 @@ const company = [
           </Popover>
 
          
-          {/* <a href="/Our-Pricing" className="text-lg font-semibold leading-6 text-white">
+          <a href="/Our-Pricing" className="text-lg font-semibold leading-6 text-white">
             Pricing
-          </a> */}
+          </a>
           
 
           <Popover className="relative">
@@ -196,14 +196,16 @@ const company = [
           </Popover>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href={my_cv} download className="text-sm font-semibold leading-6 text-white">
-              <ArrowDownTrayIcon className="w-6 h-8" aria-hidden="true" />
+          <a href={my_cv} download className="text-lg font-semibold leading-6 text-white">
+            <div className='flex-col inline'> Need help!
+              {/* <FaWhatsapp className="w-6 h-8" aria-hidden="true" /> */}
+              </div>
           </a>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 flex w-[90%] flex-col justify-between overflow-y-auto bg-gray-900 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 flex w-[80%] flex-col justify-between overflow-y-auto bg-gray-900 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="p-6">
             <div className="flex items-center justify-between">
               <a href="/" className="-m-1.5 p-1.5">
@@ -262,7 +264,7 @@ const company = [
                       href={item.href}
                       className="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                     >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                      <item.icon className="h-5 w-5 flex-none text-indigo-500" aria-hidden="true" />
                       {item.name}
                     </a>
                   ))}

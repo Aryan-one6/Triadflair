@@ -33,7 +33,7 @@ import typescript from "./tech/typescript.png";
 import nextjs from "./tech/nextjs.png";
 import Canva from "./tech/Canva.png";
 import bootstrap from "./tech/bootstrap.png";
-import vinayak from "./vinayak.jpg";
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -51,8 +51,18 @@ import nutri from "./nutri.png";
 import tripguide from "./tripguide.png";
 import down from "./down.png";
 import done from "./done.png"
+import vinayak from "./vinayak.jpg";
+import Aryan from "./Aryan.jpg";
+import Rohit from "./Rohit.jpeg";
+import Saumya from "./Saumya.jpg";
+import Suryansh from "./Suryansh.jpg";
 
 export {
+  Aryan,
+  vinayak,
+  Rohit,
+  Saumya,
+  Suryansh, 
   logo,
   py,
   flask,
@@ -68,7 +78,6 @@ export {
   three,
   four,
   backend,
-  vinayak,
   creator,
   mobile,
   web,

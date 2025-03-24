@@ -15,7 +15,7 @@ const tiers = [
     name: 'Small Business',
     id: 'tier-freelancer',
     href: '#',
-    price: { Plans: '₹30,000', Maintenance: '₹1999' },
+    price: { Plans: '$500', Maintenance: '$100' },
     description: 'The essentials to provide your best work for clients.',
     features: ['Custom design/theme', ' Responsive layout,', 'Basic CMS (like WordPress)', 'Basic on-page SEO'],
     mostPopular: false,
@@ -24,7 +24,7 @@ const tiers = [
     name: 'E-commerce ',
     id: 'tier-startup',
     href: '#',
-    price: { Plans: '₹50999', Maintenance: '₹4999' },
+    price: { Plans: '$2,000', Maintenance: '$300' },
     description: 'A plan that scales with your rapidly growing Maintenance.',
     features: [
       'Product catalog',
@@ -39,13 +39,13 @@ const tiers = [
     name: 'Enterprise',
     id: 'tier-enterprise',
     href: '#',
-    price: { Plans: '$48', Maintenance: '$576' },
+    price: { Plans: '$4,000', Maintenance: '$300' },
     description: 'Dedicated support and infrastructure for your company.',
     features: [
-      'Unlimited products',
-      'Unlimited subscribers',
-      'Advanced analytics',
-      '1-hour, dedicated support response time',
+      'Complex custom features',
+      'Integrations (ERP/CRM)',
+      'Multi-language support',
+      'Performance optimization',
       'Marketing automations',
       'Custom reporting tools',
     ],
@@ -142,6 +142,7 @@ const Pricing = () => {
           ))}
         </div>
       </div>
+     
     </div>
   )
 }

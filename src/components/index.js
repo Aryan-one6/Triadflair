@@ -21,10 +21,15 @@ import BlogPage from './BlogPage';
 import Blogs from './Blogs';
 import HeroBlogs from './HeroBlogs';
 import HeroContact from './HeroContact';
-
+import Disclaimer from './Disclaimer';
+import DisclaimerPage  from './DisclaimerPage';
+import TermsPage from './TermsPage';
+import Terms from './Terms';
+import Aryan from './Aryan.jpg';
 
 export {
   Hero,
+  Aryan,
   Home,
   AboutPage,
   ContactPage,
@@ -33,19 +38,23 @@ export {
   HeroPricing,
   HeroContact,
   Navbar,
-  HeroBlogs, 
-  Blogs, 
-  BlogPage, 
+  HeroBlogs,
+  Blogs,
+  BlogPage,
+  Disclaimer,
+  DisclaimerPage,
+  TermsPage,
+  Terms, 
   About,
   Tech,
   Experience,
   Works,
   Feedbacks,
   Contact,
-  Team, 
-  EarthCanvas, 
+  Team,
+  EarthCanvas,
   // BallCanvas, 
-  Pricing, 
+  Pricing,
   Footer,
   ScrollToTop,
 

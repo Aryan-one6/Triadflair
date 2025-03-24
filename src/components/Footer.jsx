@@ -6,17 +6,17 @@ import logo from '../assets/logo.png';
 const Footer = () => {
   const navigation = {
     Pages: [
-      // { name: 'Home', href: 'https://wellmist.co/' },
-      { name: 'Disclaimer', href: 'https://Heyaryan.com/Disclaimer/' },
-      { name: 'About ', href: 'https://Heyaryan.com/about-us/' },
-      { name: 'Term & Conditions', href: 'https://Heyaryan.com/terms-conditions/' },
-      { name: 'Privacy Policy', href: 'https://Heyaryan.com/Privacy-Policy/' },
+      { name: 'Home', href: '/' },
+      { name: 'Disclaimer', href: '/Disclaimer/' },
+      { name: 'About ', href: '/about-us/' },
+      { name: 'Term & Conditions', href: '/terms-and-conditions/' },
+      { name: 'Blogs', href: '/Blogs' },
     ],
     Services: [
-      { name: "Web App", href: "#" },
-      { name: "Mobile App", href: "#" },
-      { name: "Digital Marketing", href: "#" },
-      { name: "Maintainance ", href: "#" },
+      { name: "Web App", href: "/Our-Pricing" },
+      { name: "Mobile App", href: "/Our-Pricing" },
+      { name: "Digital Marketing", href: "/Our-Pricing" },
+      { name: "Maintainance ", href: "/Our-Pricing" },
     ],
 
   };

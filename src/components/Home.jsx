@@ -42,7 +42,7 @@ const Home=()=> {
       {/* <Tech /> */}
       <Works />
 
-      {/* <Pricing /> */}
+      <Pricing />
 
       <Team />
       <Tech />
