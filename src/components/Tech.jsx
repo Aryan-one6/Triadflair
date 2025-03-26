@@ -22,7 +22,7 @@ const Tech = () => {
     <div id="tech"> <StarsCanvas/>
       <motion.div variants={textVariant()} className="text-center">
         <p className={`${styles.sectionSubText}`}>
-          My Skills
+          Our Tech Stacks 
         </p>
         <h2 className={`${styles.sectionHeadText}`}>
           Technologies.
@@ -65,7 +65,7 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default SectionWrapper(Tech, "Tech");
 
 
 

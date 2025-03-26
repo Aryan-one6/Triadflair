@@ -11,7 +11,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import { StarsCanvas } from "./canvas";
+// import { StarsCanvas } from "./canvas";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -64,7 +64,7 @@ const Experience = () => {
         variants={textVariant()}
         initial="hidden"
         animate="show"
-      >  <StarsCanvas />
+      >  
         <p className={`${styles.sectionSubText} text-center`}>
           Follow these simple steps
         </p>

@@ -2,7 +2,7 @@ import { Description } from "@headlessui/react";
 // import { StarsCanvas } from "./canvas";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
-import {Aryan, vinayak, Saumya, Suryansh, Rohit} from "../assets" ;
+// import {Aryan, vinayak, Saumya, Suryansh, Rohit} from "../assets" ;
 
 
 const person = [
@@ -10,13 +10,13 @@ const person = [
         name: "Aryan",
         href: "#",
         Description: "Web Developer",
-        imageSrc:{Aryan},
+        imageSrc:"./Aryan.jpg",
     },
     {
         name: "Suryansh",
         href: "#",
         Description: "Backend Developer",
-        imageSrc: "./Suryansh.jpg",
+        imageSrc: "../../public/Team/Suryansh.jpg",
     },
     {
         name: "Rohit",

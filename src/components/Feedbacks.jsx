@@ -67,7 +67,7 @@ import { SectionWrapper } from "../hoc";
 
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { StarsCanvas } from "./canvas";
+// import { StarsCanvas } from "./canvas";
 
 const testimonials = [
   {
@@ -81,7 +81,7 @@ const testimonials = [
     name: "Harsh P.",
     role: "Product Designer",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
-    rating: 5,
+    rating: 4.5,
     feedback: "I used to dread doing my taxes every year, but pagedone has made the process so much simpler and stress-free.",
   },
   {
@@ -121,9 +121,17 @@ const Feedbacks=()=> {
     setCurrent((prev) => (prev >= testimonials.length - (showTwo ? 2 : 1) ? 0 : prev + 1));
   };
 
+    // ⬇ Auto-slide every 3 seconds
+    useEffect(() => {
+      const interval = setInterval(() => {
+        nextTestimonial();
+      }, 3000);
+      // Clear interval on unmount or when dependencies change
+      return () => clearInterval(interval);
+    }, [nextTestimonial]);
   return (
     <div className="flex flex-col bg-transparent items-center justify-center px-6 py-12 bg-gray-50">
-      {/* Header */}< StarsCanvas />
+      {/* Header */}
 
       <h3 className="text-gray-500 text-sm uppercase">Testimonial</h3>
       <h2 className="text-3xl font-bold text-white text-center">

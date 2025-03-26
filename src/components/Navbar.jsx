@@ -196,7 +196,7 @@ const company = [
           </Popover>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href={my_cv} download className="text-lg font-semibold leading-6 text-white">
+          <a href="https://wa.me/919354249191" className="text-lg font-semibold leading-6 text-white">
             <div className='flex-col inline'> Need help!
               {/* <FaWhatsapp className="w-6 h-8" aria-hidden="true" /> */}
               </div>

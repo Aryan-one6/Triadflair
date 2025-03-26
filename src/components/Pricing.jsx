@@ -14,7 +14,7 @@ const tiers = [
   {
     name: 'Small Business',
     id: 'tier-freelancer',
-    href: '#',
+    href: 'https://wa.me/919354249191',
     price: { Plans: '$500', Maintenance: '$100' },
     description: 'The essentials to provide your best work for clients.',
     features: ['Custom design/theme', ' Responsive layout,', 'Basic CMS (like WordPress)', 'Basic on-page SEO'],
@@ -23,7 +23,7 @@ const tiers = [
   {
     name: 'E-commerce ',
     id: 'tier-startup',
-    href: '#',
+    href: 'https://wa.me/919354249191',
     price: { Plans: '$2,000', Maintenance: '$300' },
     description: 'A plan that scales with your rapidly growing Maintenance.',
     features: [
@@ -38,7 +38,7 @@ const tiers = [
   {
     name: 'Enterprise',
     id: 'tier-enterprise',
-    href: '#',
+    href: 'https://wa.me/919354249191',
     price: { Plans: '$4,000', Maintenance: '$300' },
     description: 'Dedicated support and infrastructure for your company.',
     features: [
