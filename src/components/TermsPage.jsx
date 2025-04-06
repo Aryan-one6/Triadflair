@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Pricing, Tech, Works, Footer, ScrollToTop, Team , Terms} from ".";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Pricing, Tech, Works, Footer, ScrollToTop, Team , Terms, ChatWidget} from ".";
 
 const TermsPage=()=> {
   return (
@@ -7,7 +7,7 @@ const TermsPage=()=> {
         <Navbar />
         <Terms/>
       <Footer />
-      <ScrollToTop />
+      <ChatWidget/>
     </div>
   );
 };

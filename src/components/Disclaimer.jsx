@@ -1,6 +1,7 @@
 import React from 'react'
 import { SectionWrapper } from '../hoc'
 import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
+import ChatWidget from './Chatbot/ChatWidget'
 
 
 const Disclaimer = () => {

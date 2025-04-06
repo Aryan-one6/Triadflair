@@ -4,6 +4,7 @@ import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 import Contact from './Contact';
 import HeroContact from './HeroContact';
+import ChatWidget from './Chatbot/ChatWidget';
 
 const ContactPage = () => {
   return (
@@ -56,7 +57,7 @@ const ContactPage = () => {
     </div>
       <Contact />
       <Footer />
-      <ScrollToTop />
+      <ChatWidget/>
     </div>
   );
 };

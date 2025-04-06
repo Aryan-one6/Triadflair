@@ -3,45 +3,42 @@ import { Description } from "@headlessui/react";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 // import {Aryan, vinayak, Saumya, Suryansh, Rohit} from "../assets" ;
+import Aryan from './Aryan.jpg';
 
 
 const person = [
     {
         name: "Aryan",
         href: "#",
-        Description: "Web Developer",
-        imageSrc:"./Aryan.jpg",
+        Description: "Full Stack Dev.",
+        imageSrc:"./Team/Aryan.jpg",
     },
     {
         name: "Suryansh",
         href: "#",
-        Description: "Backend Developer",
-        imageSrc: "../../public/Team/Suryansh.jpg",
-    },
-    {
-        name: "Rohit",
-        href: "#",
         Description: "Full Stack Dev.",
-        imageSrc: "../../public/Team/Rohit.jpeg",
+        imageSrc: "./Team/Suryansh.jpg",
     },
+    
     {
         name: "Saumya ",
         href: "#",
-        Description: ".net Developer",
-        imageSrc: "../../public/Team/Saumya.jpg",
+        Description: "Soft. Developer",
+        imageSrc: "./Team/Saumya.jpg",
     },
     {
         name: "Vinayak",
         href: "#",
         Description: "AI Engineer",
-        imageSrc: "../../public/Team/vinayak.jpg",
+        imageSrc: "./Team/Vinayak.jpg",
     },
-    // {
-    //     name: "Sumit",
-    //     href: "#",
-    //     Description: "App Developer",
-    //     imageSrc: "Team/Sumit.jpg",
-    // },
+    {
+        name: "Sumit",
+        href: "#",
+        Description: "Application Dev.",
+        imageSrc: "./Team/Sumit.jpg",
+    },
+    
 ];
 
 export default function Team({ TopPadding = "" }) {
@@ -83,7 +80,7 @@ export default function Team({ TopPadding = "" }) {
                                         <span className="relative mt-auto text-center text-xl font-bold text-white">
                                             {person.name}
                                         </span>
-                                        <p className="relative text-center text-sm  text-white">
+                                        <p className="relative text-center text-sm  text-secondary">
                                             {person.Description}
                                         </p>
                                     </a>

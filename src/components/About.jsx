@@ -50,7 +50,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        HeyAryan is a creative and tech-focused platform offering streamlined web solutions and design services. Guided by innovation and user-centric strategies, it helps businesses and individuals establish a strong digital presence.
+        Triad Flair is a creative and tech-focused platform offering streamlined web solutions and design services. Guided by innovation and user-centric strategies, it helps businesses and individuals establish a strong digital presence.
 
 
 

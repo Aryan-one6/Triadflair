@@ -29,7 +29,7 @@
 
 // src/pages/HomePage/Home.jsx
 import React from "react";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Pricing, Tech, Works, Footer, ScrollToTop, Team } from "../components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Pricing, Tech, Works, Footer, ScrollToTop, Team, ChatWidget, Chatbot } from "../components";
 
 const Home=()=> {
   return (
@@ -56,7 +56,9 @@ const Home=()=> {
         <Contact />
       </div>
       <Footer />
-      <ScrollToTop />
+      {/* <Chatbot/> */} 
+      <ChatWidget/>
+      {/* <ScrollToTop /> */}
     </div>
   );
 };

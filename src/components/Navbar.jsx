@@ -11,9 +11,9 @@ import {
   ArrowDownTrayIcon,
   GlobeAltIcon,
   DevicePhoneMobileIcon,
-  MegaphoneIcon, 
-  DocumentTextIcon, 
-  ChartBarIcon, 
+  MegaphoneIcon,
+  DocumentTextIcon,
+  ChartBarIcon,
   // WhatsappIcon,
   Squares2X2Icon,
   ChartPieIcon,
@@ -27,32 +27,32 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 
 const Service = [
-  { 
-    name: "Web App", 
-    description: "Build fast, scalable applications.", 
-    href: "#", 
-    icon: GlobeAltIcon 
+  {
+    name: "Web App",
+    description: "Build fast, scalable applications.",
+    href: "#",
+    icon: GlobeAltIcon
   },
-  { 
-    name: "Mobile App", 
-    description: "Create iOS and Android apps.", 
-    href: "#", 
-    icon: DevicePhoneMobileIcon 
+  {
+    name: "Mobile App",
+    description: "Create iOS and Android apps.",
+    href: "#",
+    icon: DevicePhoneMobileIcon
   },
-  { 
-    name: "Digital Marketing", 
-    description: "Boost online brand visibility.", 
-    href: "#", 
-    icon: MegaphoneIcon 
+  {
+    name: "Digital Marketing",
+    description: "Boost online brand visibility.",
+    href: "#",
+    icon: MegaphoneIcon
   },
-  { 
-    name: "Search Engine Optimization", 
-    description: "Improve rankings with SEO.", 
-    href: "#", 
-    icon: DocumentTextIcon 
+  {
+    name: "Artificial intelligence ",
+    description: "Intigrate AI for Business growth ",
+    href: "#",
+    icon: DocumentTextIcon
   },
-  
-    ]
+
+]
 const callsToAction = [
   { name: 'Whatsapp', href: 'https://wa.me/919354249191', icon: FaWhatsapp },
   { name: 'Call Now', href: 'tel:+919354249191', icon: PhoneIcon },
@@ -63,8 +63,14 @@ const company = [
   { name: 'Blog', href: '/blogs', description: 'Read our latest announcements and get perspectives from our team' },
 
 ]
+const price = [
+  { name: 'Pricing', href: '/Our-Pricing' },
+  { name: 'About us', href: '/about-us', description: 'Learn more about our company values and mission to empower others' },
+  { name: 'Contact us', href: '/contact-us', description: 'Get in touch with our dedicated support team or reach out on our community forums' },
+  { name: 'Blog', href: '/blogs', description: 'Read our latest announcements and get perspectives from our team' },
+]
 
- const Navbar=() =>{
+const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -76,14 +82,13 @@ const company = [
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, 
-  []);
+  },
+    []);
 
   return (
-<header
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-primary shadow-md" : "bg-transparent"
-      }`}
+    <header
+      className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-primary shadow-md" : "bg-transparent"
+        }`}
     >      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
@@ -91,7 +96,7 @@ const company = [
             <img className="h-12 w-full justify-center item-left" src={logo} alt="" />
           </a>
         </div>
-        
+
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -101,12 +106,12 @@ const company = [
             <span className="sr-only">Open main menu</span>
             <Squares2X2Icon className="h-6 w-6 text-white" aria-hidden="true" />
           </button>
-          
+
         </div>
-        
+
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-        <a href="/" className="tflex items-center gap-x-1 text-lg font-semibold leading-6 text-white">
-        Home 
+          <a href="/" className="tflex items-center gap-x-1 text-lg font-semibold leading-6 text-white">
+            Home
 
           </a>
           <Popover className="relative">
@@ -160,11 +165,11 @@ const company = [
             </Transition>
           </Popover>
 
-         
+
           <a href="/Our-Pricing" className="text-lg font-semibold leading-6 text-white">
             Pricing
           </a>
-          
+
 
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-lg font-semibold leading-6 text-white">
@@ -199,7 +204,7 @@ const company = [
           <a href="https://wa.me/919354249191" className="text-lg font-semibold leading-6 text-white">
             <div className='flex-col inline'> Need help!
               {/* <FaWhatsapp className="w-6 h-8" aria-hidden="true" /> */}
-              </div>
+            </div>
           </a>
         </div>
       </nav>
@@ -226,7 +231,7 @@ const company = [
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
+              <div className="-my-6 divide-y divide-gray-500">
                 <div className="space-y-2 py-6">
                   {Service.map((item) => (
                     <a
@@ -241,9 +246,14 @@ const company = [
                     </a>
                   ))}
                 </div>
-                <div className="space-y-2 py-6">
-                  
-                  {company.map((item) => (
+                {/* <a href="/Our-Pricing" className="text-lg border-none font-semibold leading-6 text-white">
+                  Pricing
+                </a> */}
+
+
+                <div className="space-y-2 py-4">
+
+                  {price.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
@@ -253,22 +263,24 @@ const company = [
                     </a>
                   ))}
                 </div>
-                
+
+             
+
               </div>
             </div>
           </div>
           <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-indigo-500" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+            {callsToAction.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+              >
+                <item.icon className="h-5 w-5 flex-none text-indigo-500" aria-hidden="true" />
+                {item.name}
+              </a>
+            ))}
+          </div>
         </Dialog.Panel>
       </Dialog>
     </header>

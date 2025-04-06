@@ -158,7 +158,7 @@ const Feedbacks=()=> {
                   <span key={i} className="text-yellow-400 text-xl">★</span>
                 ))}
               </div>
-              <p className="text-gray-400 mt-3">{testimonial.feedback}</p>
+              <p className="text-secondary mt-3">{testimonial.feedback}</p>
             </div>
           ))}
         </div>

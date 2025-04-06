@@ -21,6 +21,7 @@ import ScrollToTop from './ScrollToTop'
 import HeroAbout from './HeroAbout'
 import team from '../assets/team.avif';
 import Team from './Team'
+import ChatWidget from './Chatbot/ChatWidget'
 
 const timeline = [
   {
@@ -273,7 +274,7 @@ Project Managed                </p>
               </div>
             </div>
             <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-indigo-600 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
-              <p className="flex-none text-3xl font-bold tracking-tight text-white">50+</p>
+              <p className="flex-none text-3xl font-bold tracking-tight text-white">150+</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">Transactions this year</p>
                 <p className="mt-2 text-base leading-7 text-indigo-200">
@@ -290,8 +291,8 @@ Project Managed                </p>
 
       {/* Footer */}
      <Footer/>
-     <ScrollToTop/>
-    </div>
+     <ChatWidget/>
+     </div>
   )
 }
 

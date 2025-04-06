@@ -26,10 +26,14 @@ import DisclaimerPage  from './DisclaimerPage';
 import TermsPage from './TermsPage';
 import Terms from './Terms';
 import Aryan from './Aryan.jpg';
+import ChatWidget from "./Chatbot/ChatWidget";
+import Chatbot from './Chatbot';
 
 export {
   Hero,
   Aryan,
+  ChatWidget,
+  Chatbot,
   Home,
   AboutPage,
   ContactPage,

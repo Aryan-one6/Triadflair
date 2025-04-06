@@ -5,7 +5,7 @@ import myCV from "../assets/my_cv.pdf"; // Importing your CV
 
 const Hero = () => {
   return (
-    <section className={`relative w-full  h-screen mx-auto flex items-center`}>
+    <section className={`relative md:w-[60%]  h-screen mx-auto flex justify-center items-center `}>
       <div
         className={`absolute inset-0 top-0 bottom-0 flex justify-center items-center max-w-7xl mx-auto ${styles.paddingX} gap-5`}
       >
@@ -14,14 +14,15 @@ const Hero = () => {
           <div className='w-1 sm:h-60 h-60 violet-gradient' />
         </div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hey,It's team <span className='text-[#915EFF]'>Aryan</span>
+        <div className="">
+          <h1 className={`${styles.heroHeadText} text-white `}>
+          👋 Hey! Meet <span className='text-[#915EFF]'>Triad Flair!</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-4 text-gray-400`}>
-            Bringing visions to life <br className='sm:block hidden' />
-            through cutting-edge web Technologies.
-          </p>
+          <p className={`${styles.heroSubText} mt-4 text-secondary  sm:w-full`}>
+          We help bring your ideas to life. Together, 
+
+{/* <br className='sm:block hidden' /> */}
+we'll build something amazing, creative, and exactly what you need to stand out.          </p>
 
           {/* Social Media Icons and Download CV Icon */}
           <div className='flex flex-wrap items-center gap-4 mt-8'>

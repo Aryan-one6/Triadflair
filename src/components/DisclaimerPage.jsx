@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Pricing, Tech, Works, Footer, ScrollToTop, Team , Disclaimer} from ".";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Pricing, Tech, Works, Footer, ScrollToTop, Team , Disclaimer, ChatWidget} from ".";
 
 const DisclaimerPage=()=> {
   return (
@@ -7,7 +7,7 @@ const DisclaimerPage=()=> {
         <Navbar />
         <Disclaimer/>
       <Footer />
-      <ScrollToTop />
+      <ChatWidget/>
     </div>
   );
 };

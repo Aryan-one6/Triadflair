@@ -66,11 +66,11 @@ const Footer = () => {
         {/* First Column */}
         <div className="flex flex-wrap lg:flex-nowrap  gap-8">
           <div className="w-full lg:w-2/4">
-            <div className="mb-4  px-0">
-              <img src={logo} alt="Logo" className="w-32" />
+            <div className="mb-4  px-0 h-12 ">
+              <img src={logo} alt="Logo" className="h-12 " />
             </div>
-            <p className="text-base mb-4">
-            Hey there! It's Team Aryan — Some Creative technologists who loves turning ideas into immersive digital experiences. Welcome to our corner of the internet.</p>
+            <p className="text-base  text-secondary mb-4">
+            Hey there! It's Triad Flair — Some Creative technologists who loves turning ideas into immersive digital experiences. Welcome to our corner of the internet.</p>
             <div className="flex gap-4">
               {social.map((item) => (
                 <a
@@ -95,7 +95,7 @@ const Footer = () => {
                 <svg className="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 13.333l-11-7.333v10.667c0 .733.6 1.333 1.333 1.333h19.333c.733 0 1.333-.6 1.333-1.333v-10.667l-11 7.333zM12 11.667l11-7.333v-.667c0-.733-.6-1.333-1.333-1.333h-19.333c-.733 0-1.333.6-1.333 1.333v.667l11 7.333z" />
                 </svg>
-                <a href="mailto:Contact@Heyaryan.com" className="text-base text-gray-400 hover:text-gray-300">Connect@Heyaryan.com</a>
+                <a href="mailto:Contact@Heyaryan.com" className="text-base text-gray-400 hover:text-gray-300">Connect@Triadflair.com</a>
               </li>
 
               {/* Phone */}
@@ -176,7 +176,7 @@ const Footer = () => {
       </div>
       <div className=" pb-4 text-center border-t border-white/10 pt-4 sm:mt-20 lg:mt- bg-primary">
         <p className="  text-base leading-5 text-white  ">
-          &copy; HeyAryan.
+          &copy; Triad Flair.
         </p>
       </div>
     </footer>

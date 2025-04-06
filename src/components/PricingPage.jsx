@@ -6,6 +6,7 @@ import ScrollToTop from './ScrollToTop'
 // import Hero from './Hero';
 import Feedbacks from './Feedbacks'
 import HeroPricing from './HeroPricing'
+import ChatWidget from './Chatbot/ChatWidget'
 
 
 
@@ -19,10 +20,10 @@ import HeroPricing from './HeroPricing'
       {/* <Hero /> */}
     </div>
     <Pricing />
-<Feedbacks />
+{/* <Feedbacks /> */}
 <Footer />
-    <ScrollToTop />
-  </div>
+<ChatWidget/>
+</div>
   )
 }
 export default PricingPage;
