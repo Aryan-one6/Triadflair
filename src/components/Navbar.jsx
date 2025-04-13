@@ -66,7 +66,7 @@ const company = [
 const price = [
   { name: 'Pricing', href: '/Our-Pricing' },
   { name: 'About us', href: '/about-us', description: 'Learn more about our company values and mission to empower others' },
-  { name: 'Contact us', href: '/contact-us', description: 'Get in touch with our dedicated support team or reach out on our community forums' },
+  // { name: 'Contact us', href: '/contact-us', description: 'Get in touch with our dedicated support team or reach out on our community forums' },
   { name: 'Blog', href: '/blogs', description: 'Read our latest announcements and get perspectives from our team' },
 ]
 
@@ -214,7 +214,7 @@ const Navbar = () => {
           <div className="p-6">
             <div className="flex items-center justify-between">
               <a href="/" className="-m-1.5 p-1.5">
-                <span className="sr-only">Hey Aryan</span>
+                <span className="sr-only">Triad Flair</span>
                 <img
                   className="h-12 w-full"
                   src={logo}

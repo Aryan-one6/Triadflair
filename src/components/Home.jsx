@@ -44,7 +44,6 @@ const Home=()=> {
 
       {/* <Pricing /> */}
 
-
       <Experience />
       <Feedbacks />
 
