@@ -30,7 +30,7 @@ const person = [
         name: "Vinayak",
         href: "#",
         Description: "AI Engineer",
-        imageSrc: "./Team/Vinayak.jpg",
+        imageSrc: "./Team/vinayak.jpg",
     },
     {
         name: "Sumit",
