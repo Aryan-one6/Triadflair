@@ -240,13 +240,7 @@ const Works = () => {
     );
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     nextProjects();
-  //   }, 3000);
-  //   // Clear interval on unmount or when dependencies change
-  //   return () => clearInterval(interval);
-  // }, [nextProjects]);
+
 
   return (
     <>

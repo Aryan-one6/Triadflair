@@ -1,10 +1,22 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import React, { useState, useEffect } from 'react';
+import 'aos/dist/aos.css';
+
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Pricing, Tech, Works, Footer, ScrollToTop, Team, DisclaimerPage, BlogPage, Home, AboutPage, ContactPage, PricingPage, TermsPage} from './components';
 // import { DisclaimerPage } from "./pages ";
 
 // import Home from './pages/Home.jsx';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+
+// useEffect(() => {
+//   AOS.init({
+//     duration: 800,
+//     once: true,
+//   });
+// }, []);
+
 
 const App = () => {
 

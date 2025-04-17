@@ -83,6 +83,8 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+
+    
     </>
   );
 };

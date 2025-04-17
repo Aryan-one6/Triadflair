@@ -1,185 +1,143 @@
-// import React from "react";
-// import { motion } from "framer-motion";
 
-// import { styles } from "../styles";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-// import { fadeIn, textVariant } from "../utils/motion";
-// import { testimonials } from "../constants";
-
-// const FeedbackCard = ({
-//   index,
-//   testimonial,
-//   name,
-//   designation,
-//   company,
-//   image,
-// }) => (
-//   <motion.div
-//     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-//     className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
-//   >
-//     <p className='text-white font-black text-[48px]'>"</p>
-
-//     <div className='mt-1'>
-//       <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
-
-//       <div className='mt-7 flex justify-between items-center gap-1'>
-//         <div className='flex-1 flex flex-col'>
-//           <p className='text-white font-medium text-[16px]'>
-//             <span className='blue-text-gradient'>@</span> {name}
-//           </p>
-//           <p className='mt-1 text-secondary text-[12px]'>
-//             {designation} of {company}
-//           </p>
-//         </div>
-
-//         {/* <img
-//           src={image}
-//           alt={`feedback_by-${name}`}
-//           className='w-10 h-10 rounded-full object-cover'
-//         /> */}
-//       </div>
-//     </div>
-//   </motion.div>
-// );
-
-// const Feedbacks = () => {
-//   return (
-//     <div id="testimonials" className={`mt-12 mb-0 bg-black-100 rounded-[20px]`}>
-//       <div
-//         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
-//       >
-//         <motion.div variants={textVariant()}>
-//           <p className={styles.sectionSubText}>What others say</p>
-//           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
-//         </motion.div>
-//       </div>
-//       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-//         {testimonials.map((testimonial, index) => (
-//           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default SectionWrapper(Feedbacks, "");
-
-import { useState, useEffect } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-// import { StarsCanvas } from "./canvas";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const testimonials = [
   {
-    name: "Sailesh D",
-    role: "CEO",
-    image: "https://randomuser.me/api/portraits/men/44.jpg",
-    rating: 5,
-    feedback: "The user interface of this pagedone is so intuitive, I was able to start using it without any guidance.",
-  },
-  {
-    name: "Harsh P.",
+    name: "Sailesh Botosh",
     role: "Product Designer",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-    rating: 4.5,
-    feedback: "I used to dread doing my taxes every year, but pagedone has made the process so much simpler and stress-free.",
+    image: "https://xolio-nextjs.vercel.app/assets/img/images/testimonial_avatar03.png",
+    feedback:
+      "We seek to get involved early in the design phase so that we can manage the project more efficiently, provide effective building solutions",
   },
   {
-    name: "Sarah L.",
-    role: "Marketing Manager",
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
-    rating: 5,
-    feedback: "Pagedone helps our team collaborate effortlessly. Highly recommend it!",
+    name: "James Botosh",
+    role: "Product Designer",
+    image: "https://xolio-nextjs.vercel.app/assets/img/images/testimonial_avatar01.png",
+    feedback:
+      "We seek to get involved early in the design phase so that we can manage the project more efficiently, provide effective building solutions",
   },
   {
-    name: "Mukesh T.",
-    role: "Software Engineer",
-    image: "https://randomuser.me/api/portraits/men/18.jpg",
-    rating: 5,
-    feedback: "A must-have tool for any professional! The experience is seamless and efficient.",
+    name: "Alex ",
+    role: "Product Designer",
+    image: "https://xolio-nextjs.vercel.app/assets/img/images/testimonial_avatar03.png",
+    feedback:
+      "We seek to get involved early in the design phase so that we can manage the project more efficiently, provide effective building solutions",
+  },
+
+  {
+    name: "Daren Smith",
+    role: "Product Designer",
+    image: "https://xolio-nextjs.vercel.app/assets/img/images/testimonial_avatar01.png",
+    feedback:
+      "We seek to get involved early in the design phase so that we can manage the project more efficiently, provide effective building solutions",
+  },
+  {
+    name: "Mark ",
+    role: "Product Designer",
+    image: "https://xolio-nextjs.vercel.app/assets/img/images/testimonial_avatar03.png",
+    feedback:
+      "We seek to get involved early in the design phase so that we can manage the project more efficiently, provide effective building solutions",
   },
 ];
 
-const Feedbacks=()=> {
-  const [current, setCurrent] = useState(0);
-  const [showTwo, setShowTwo] = useState(window.innerWidth >= 640); // Default to 2 on desktop
-
-  // ✅ Responsive Fix: Adjust view dynamically
-  useEffect(() => {
-    const handleResize = () => {
-      setShowTwo(window.innerWidth >= 640);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const prevTestimonial = () => {
-    setCurrent((prev) => (prev === 0 ? testimonials.length - (showTwo ? 2 : 1) : prev - 1));
-  };
-
-  const nextTestimonial = () => {
-    setCurrent((prev) => (prev >= testimonials.length - (showTwo ? 2 : 1) ? 0 : prev + 1));
-  };
-
-    // ⬇ Auto-slide every 3 seconds
-    useEffect(() => {
-      const interval = setInterval(() => {
-        nextTestimonial();
-      }, 3000);
-      // Clear interval on unmount or when dependencies change
-      return () => clearInterval(interval);
-    }, [nextTestimonial]);
+const Feedbacks = () => {
   return (
-    <div className="flex flex-col bg-transparent items-center justify-center px-6 py-12 bg-gray-50">
-      {/* Header */}
+    <section className="relative testimonial-area-three bg-primary py-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Title + Arrows Row */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between mb-16">
+          <h2   className={`${styles.sectionHeadText} leading-snug pt-16`} >
+            Some Words From <br  className="hidden md:block" /> Our Customers
+          </h2>
+          {/* <div className="testimonial-nav flex gap-4 mt-6 md:mt-0">
+            <button className="swiper-button-prev w-10 h-10 bg-white text-black rounded-full shadow-md hover:bg-orange-300 transition" />
+            <button className="swiper-button-next w-10 h-10 bg-white text-black rounded-full shadow-md hover:bg-orange-300 transition" />
+          </div> */}
+        </div>
 
-      <h3 className="text-gray-500 text-sm uppercase">Testimonial</h3>
-      <h2 className="text-3xl font-bold text-white text-center">
-        100+ Customers gave their <span className="text-purple-600">Feedback</span>
-      </h2>
+        {/* Swiper Section */}
+        <Swiper   className="overflow-visible pb-16"
 
-      {/* Testimonial Wrapper */}
-      <div className="relative w-full  max-w-4xl mt-8">
-        <div className="flex sm:flex-row sm:space-x-6 min-h-[350px] transition-all duration-300">
-          {testimonials.slice(current, current + (showTwo ? 2 : 1)).map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-transparent p-6 rounded-xl shadow-md  border-purple-200 w-full sm:w-1/2 transition-all duration-300 flex flex-col items-center text-center"
-            >
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-16 h-16 rounded-full mb-4"
-              />
-              <h4 className="text-lg font-semibold">{testimonial.name}</h4>
-              {/* <p className="text-gray-500">{testimonial.role}</p> */}
-              <div className="flex justify-center my-2">
-                {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-xl">★</span>
-                ))}
+          modules={[Autoplay, Pagination, Navigation]}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          loop={true}
+          spaceBetween={30}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{
+            el: ".testimonial-swiper-pagination",
+            clickable: true,
+          }}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            575: { slidesPerView: 2 },
+            767: { slidesPerView: 2 },
+            991: { slidesPerView: 2 },
+            1199: { slidesPerView: 3 },
+            1350: { slidesPerView: 3 },
+          }}
+        >
+          {testimonials.map((t, index) => (
+            <SwiperSlide key={index} className="overflow-visible">
+              <div className="relative bg-white text-black pt-16 pb-8 px-6 rounded-[20px] shadow-md text-center overflow-visible">
+                {/* Avatar */}
+                <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
+                  <img
+                    src={t.image}
+                    alt={t.name}
+                    className="w-20 h-20 rounded-full  border-4 border-white shadow-lg"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="mt-2">
+                  <h4 className="text-lg font-bold">{t.name}</h4>
+                  <span className="text-sm text-gray-500">{t.role}</span>
+                  <p className="mt-3 text-sm text-gray-700 leading-relaxed">“{t.feedback}”</p>
+                </div>
               </div>
-              <p className="text-secondary mt-3">{testimonial.feedback}</p>
-            </div>
-          ))}
-        </div>
+            </SwiperSlide>
 
-        {/* ✅ Fixed Navigation Buttons */}
-        <div className="flex justify-center mt-6 gap-4">
-          <button
-            onClick={prevTestimonial}
-            className="p-3 border rounded-full border-purple-500 text-purple-600 hover:bg-purple-100 transition-all"
-          >
-            <FaArrowLeft size={18} />
-          </button>
-          <button
-            onClick={nextTestimonial}
-            className="p-3 border rounded-full border-purple-500 text-purple-600 hover:bg-purple-100 transition-all"
-          >
-            <FaArrowRight size={18} />
-          </button>
-        </div>
+          ))}
+        </Swiper>
+
+        {/* Pagination Dots */}
+        <div className="testimonial-swiper-pagination text-white mt-10 flex  justify-center gap-2" />
       </div>
-    </div>
+
+      {/* Decorative Shapes */}
+      <div className="testimonial-shape-wrap pointer-events-none">
+        <img
+          src="/assets/img/images/testimonial_shape01.png"
+          alt=""
+          className="absolute top-0 left-0 w-20 md:w-auto opacity-30 animate-float"
+        />
+        <img
+          src="/assets/img/images/testimonial_shape02.png"
+          alt=""
+          className="absolute top-10 right-0 w-12 md:w-auto opacity-30 animate-float"
+        />
+        <img
+          src="/assets/img/images/testimonial_shape03.png"
+          alt=""
+          className="absolute bottom-0 left-0 w-20 md:w-auto opacity-30 animate-float"
+        />
+        <img
+          src="/assets/img/images/testimonial_shape04.png"
+          alt=""
+          className="absolute bottom-0 right-0 w-16 md:w-auto opacity-30 animate-float"
+        />
+      </div>
+    </section>
   );
-}
+};
+
 export default SectionWrapper (Feedbacks, "Feedbacks");

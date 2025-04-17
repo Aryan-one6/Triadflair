@@ -12,6 +12,16 @@ module.exports = {
         "black-200": "#090325",
         "white-100": "#f3f3f3",
       },
+
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-15px)' },
+        },
+      },
+      animation: {
+        float: 'float 6s ease-in-out infinite',
+      },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
@@ -23,5 +33,7 @@ module.exports = {
       },
     },
   },
+  
   plugins: [],
 };
+

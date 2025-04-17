@@ -17,6 +17,8 @@ import ppc from "./ppc.png";
 import wellmist from "./wellmist.png";
 import mf from "./mf.png";
 import team from "./team.avif";
+// import testimonial_avatar01 from "./testimonial_shape01.png";
+// import testimonial_avatar02 from "./testimonial_avatar02.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -56,6 +58,11 @@ import Aryan from "./Aryan.jpg";
 import Rohit from "./Rohit.jpeg";
 import Saumya from "./Saumya.jpg";
 import Suryansh from "./Suryansh.jpg";
+import testimonial_shape02 from "./testimonial_shape02.png";
+import testimonial_shape01 from "./testimonial_shape01.png";
+import testimonial_shape03 from "./testimonial_shape03.png";
+
+
 
 export {
   Aryan,
@@ -63,6 +70,12 @@ export {
   Rohit,
   Saumya,
   Suryansh, 
+  testimonial_shape01,
+  testimonial_shape02,
+  testimonial_shape03,
+  // testimonial_avatar03,
+
+
   logo,
   py,
   flask,

@@ -22,18 +22,20 @@ import Blogs from './Blogs';
 import HeroBlogs from './HeroBlogs';
 import HeroContact from './HeroContact';
 import Disclaimer from './Disclaimer';
-import DisclaimerPage  from './DisclaimerPage';
+import DisclaimerPage from './DisclaimerPage';
 import TermsPage from './TermsPage';
 import Terms from './Terms';
 import Aryan from './Aryan.jpg';
 import ChatWidget from "./Chatbot/ChatWidget";
-import Chatbot from './Chatbot';
+// import Chatbot from './Chatbot';
+import MouseCursor from './MouseCursor';
 
 export {
   Hero,
   Aryan,
   ChatWidget,
-  Chatbot,
+  MouseCursor,
+  // Chatbot,
   Home,
   AboutPage,
   ContactPage,
@@ -48,7 +50,7 @@ export {
   Disclaimer,
   DisclaimerPage,
   TermsPage,
-  Terms, 
+  Terms,
   About,
   Tech,
   Experience,

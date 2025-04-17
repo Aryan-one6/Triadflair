@@ -19,7 +19,8 @@ const Tech = () => {
   };
 
   return (
-    <div id="tech"> <StarsCanvas/>
+    <div id="tech"> 
+    {/* <StarsCanvas/> */}
       <motion.div variants={textVariant()} className="text-center">
         <p className={`${styles.sectionSubText}`}>
           Our Tech Stacks 
