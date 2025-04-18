@@ -123,7 +123,7 @@ const About = () => {
             ].map((card, i) => (
               <div
                 key={i}
-                className={`bg-gray-900 shadow-lg rounded-2xl text-center p-8 hover:shadow-xl transition-all flex flex-col items-center justify-center h-[320px] ${i % 2 !== 0 ? "mt-10" : ""
+                className={`bg-black-pink-gradient shadow-card rounded-2xl text-center p-8 hover:shadow-xl transition-all flex flex-col items-center justify-center h-[320px] ${i % 2 !== 0 ? "mt-10" : ""
                   }`}
                 data-aos="zoom-in"
                 data-aos-delay={card.delay}
